@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Cart section -->
+    <section class="cart-center">
+      <div class="backdrop"></div>
+      <button class="btn show-modal">show modal</button>
+      <div class="cart">
+        <div class="cart__title">your cart</div>
+        <div class="cart__content">
+          <div class="cart-item">
+            <div class="cart-item__img">
+              <img src="./images/product-1.jpeg" alt="product1" />
+            </div>
+            <div class="cart-item__desc">
+              <h4>product title</h4>
+              <h5>$ 12.99</h5>
+            </div>
+            <div class="cart-item__conteoller">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              <p>2</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <span class="remove__item">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </span>
+          </div>
+          
+        </div>
+        <div class="cart__footer">
+          <span class="cart-total">total price : 90 $</span>
+          <button class="btn clear-cart">clear cart</button>
+          <button class="btn cart-item-confirm">confirm</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      const cartBtn = document.querySelector(".show-modal");
+      const cartModal = document.querySelector(".cart");
+      const backDrop = document.querySelector(".backdrop");
+      const closeModal = document.querySelector(".cart-item-confirm");
+
+      cartBtn.addEventListener("click", showModalFunction);
+      closeModal.addEventListener("click", closeModalFunction);
+      backDrop.addEventListener("click", closeModalFunction);
+
+      function showModalFunction() {
+        backDrop.style.display = "block";
+        cartModal.style.opacity = "1";
+      }
+
+      function closeModalFunction() {
+        backDrop.style.display = "none";
+        cartModal.style.opacity = "0";
+      }
+    </script>
+  </body>
+</html>

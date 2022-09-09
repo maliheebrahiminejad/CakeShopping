@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo.png"/>
+    <title>Malihe shoping</title>
+    <meta
+      name="description"
+      content="این وب سایت توسط  ملیحه ابراهیمی‌نژاد به عنوان  تمرین دوره جاوا اسکریپت  استاد صاحب محمدی آماده شده است"
+    />
+    <meta property="og:title" content="  تمرین دوره جاوا اسکریپت       " />
+    <meta
+      property="og:description"
+      content="این وب سایت توسط  ملیحه ابراهیمی‌نژاد به عنوان  تمرین دوره  جاوا اسکریپت استاد صاحب محمدی آماده شده است"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <p class="nav-title">Malihe shoping</p>
+        <span class="cart-btn">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-items">0</span>
+        </span>
+      </div>
+    </nav>
+    <!-- products -->
+    <section class="products">
+      <div class="section-title"><h2>Our Products</h2></div>
+      <div class="product-center">
+        <!-- single products -->
+        <!-- <section class="product">
+          <div class="image-container">
+            <img
+              class="product-image"
+              src="./images/cake-1.jpg"
+              alt="dounat"
+            />
+          </div>
+          <div class="product-desc">
+            <p class="product-title">limo cake</p>
+            <p class="product-price">price 100$</p>
+          </div>
+          <button class="btn add-to-cart">
+            <i class="fas fa-shopping-cart"></i>
+            add to cart
+          </button>
+        </section> -->
+      </div>
+    </section>
+    <!-- Cart section -->
+    <section class="cart-center">
+      <div class="backdrop"></div>
+      <div class="cart">
+        <div class="cart__title">Your cart</div>
+        <div class="cart__content"></div>
+        <div class="cart__footer">
+          <span class="cart-total"></span>
+          <button class="btn clear-cart">clear cart</button>
+          <button class="btn cart-item-confirm">confirm</button>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <p class="copyright">&copy; 2022 Malihe Shopping Company. All rights reserved.</p>
+      </footer>
+      <script type="module" src="./index.js"></script>
+    </section>
+  </body>
+</html>
